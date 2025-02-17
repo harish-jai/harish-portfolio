@@ -1,0 +1,116 @@
+.work-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.work-container.light-mode {
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.work-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3.5rem;
+  /* font-weight: bold; */
+  margin-bottom: -1rem;
+}
+
+.work-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+/* Cards Layout */
+.work-cards-container {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.work-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-snap-align: start;
+  width: max-content;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 300px;
+  max-width: 300px;
+  scroll-snap-align: center;
+  white-space: normal;
+}
+
+/* Hide scrollbar for Webkit browsers */
+.work-cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.work-cards-container {
+  scrollbar-width: none;
+}
+
+
+/* Individual Work Card */
+.work-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.work-card:hover {
+  transform: scale(1.02);
+}
+
+/* Work Card Header (Logo + Company Info) */
+.work-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.work-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Role and Duration */
+.work-card h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.work-card h3 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.work-duration {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+/* Tech Stack */
+.tech-stack {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-style: italic;
+}

@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --background-color: #181818;
+    --text-color: #f5f5f5;
+    --primary-color: #0077b5;
+    --secondary-color: #333;
+    --highlight-color: #FFCB05;
+    --highdark-color: #00274C;
+    --card-bg: #1a202c;
+    --link-color: #61dafb;
+    --success-color: #09b72c;
+    --text-muted: #A9A9A9;
+    --highlight-bg: #535252;
+}

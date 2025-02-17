@@ -1,0 +1,195 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  padding-bottom: 25px;
+  padding-top: 0px;
+  color: var(--text-color);
+}
+
+.education-container.light-mode {
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.education-header-block {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  max-height: 400px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-header-block.light-mode {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-header-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background-color: var(--background-color);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+  /* Create a trapezoid */
+  z-index: 1;
+}
+
+.education-header-block.light-mode::before {
+  background-color: #f0f0f0;
+}
+
+.education-header-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.education-header-image img {
+  width: 100vw;
+  height: 100vh;
+  max-height: 400px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.education-header-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: var(--background-color);
+  padding: 2rem;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education-header-text.light-mode {
+  background-color: #f0f0f0;
+}
+
+.title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3.5rem;
+  /* font-weight: bold; */
+  margin-bottom: -1rem;
+}
+
+.title p {
+  /* Ensure the font details are inherited from the parent */
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.courses {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.courses.light-mode {
+  color: #333;
+}
+
+.highlighted-courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.other-courses {
+  margin-top: 2rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  width: 100%;
+  text-align: center;
+}
+
+.other-courses.light-mode {
+  color: #333;
+}
+
+.other-courses table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.other-courses th,
+.other-courses td {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.other-courses th {
+  background-color: var(--highlight-bg);
+  color: var(--text-color);
+}
+
+.other-courses th.light-mode {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.other-courses.light-mode tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.other-courses tr:nth-child(even) {
+  background-color: #333;
+}
+
+.minors {
+  margin: 2rem;
+}
+
+/* Hover effect for University of Michigan text */
+.umich-hover {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  /* Space between text and flag */
+  position: relative;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hidden flag initially */
+.umich-flag {
+  width: 50px;
+  /* Adjust size as needed */
+  height: auto;
+  opacity: 0;
+  transform: translateY(-5px);
+  /* Slight movement effect */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Show flag on hover */
+.umich-hover:hover .umich-flag {
+  opacity: 1;
+  transform: translateY(0);
+  /* Flag moves into place */
+}
+
+.pin.light-mode {
+  color: var(--highdark-color);
+}
+
+.pin {
+  color: var(--highlight-color);
+}

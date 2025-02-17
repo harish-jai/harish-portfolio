@@ -1,0 +1,40 @@
+.fake-terminal {
+  background-color: black;
+  color: var(--success-color);
+  padding: 1rem;
+  /* Equivalent to p-4 */
+  border-radius: 0.5rem;
+  /* Equivalent to rounded-lg */
+  font-family: monospace;
+  /* Equivalent to font-mono */
+  width: 100%;
+  /* Equivalent to w-full */
+  max-width: 54rem;
+  /* Equivalent to max-w-xl */
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  /* Equivalent to text-sm */
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* Equivalent to space-x-2 */
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--success-color);
+  width: 100%;
+}
+
+.output {
+  margin-top: 1rem;
+  /* Equivalent to mt-4 */
+}
